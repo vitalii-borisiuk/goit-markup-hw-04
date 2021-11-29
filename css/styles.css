@@ -104,6 +104,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -119,6 +120,8 @@ img {
   color: var(--accent-color);
 }
 .header-contacts {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -169,6 +172,7 @@ img {
 }
 .contact-item-icon {
   fill: currentColor;
+  margin-right: 10px;
 }
 
 /* -------------- Footer -------------------  */
@@ -442,7 +446,7 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--third-color);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-social-list {
@@ -497,9 +501,6 @@ img {
   justify-content: center;
   width: 170px;
   height: 92px;
-
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 .client-item + .client-item {
   margin-left: 30px;
@@ -508,21 +509,29 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 106px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   color: var(--icon-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .client-icon {
   fill: currentColor;
 }
-.client-item:hover,
+.client-link:focus,
+.client-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+/* .client-item:hover,
 .client-item:focus {
   border: 1px solid #2196f3;
 }
-.client-item:hover .client-link,
-.client-item:focus .client-link {
+.client-link:hover .client-item,
+.client-link:focus .client-item {
   color: var(--accent-color);
-}
+  border-color: var(--accent-color);
+} */
 /* --------------- PORTFOLIO----------------- */
 
 /* -----------------Filter------------------ */
@@ -575,13 +584,13 @@ img {
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--first-color);
+  border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.current-btn {
   background-color: var(--accent-color);
   color: var(--first-color);
   border: none;
