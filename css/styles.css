@@ -557,10 +557,12 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.work-item-focus {
   background-color: var(--first-color);
 }
-.work-item:hover,
-.work-item:focus {
+.work-item-focus:hover,
+.work-item-focus:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
