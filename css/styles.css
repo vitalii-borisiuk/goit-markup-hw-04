@@ -227,15 +227,16 @@ img {
 }
 .footer-all {
   display: flex;
+  align-items: center;
 }
 .footer-join {
   justify-content: center;
   align-items: center;
-  margin-top: 12px;
+  margin-top: 0;
   margin-left: 70px;
 }
 .footer-join-title {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -452,6 +453,8 @@ img {
 .team-social-list {
   display: flex;
   justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .team-social-item {
   width: 44px;
